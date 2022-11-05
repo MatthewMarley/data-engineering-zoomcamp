@@ -48,3 +48,31 @@ docker run -it `
     --name pgadmin `
     dpage/pgadmin4
 
+
+# Run ingest script
+py ingest_data.py `
+    --user=root `
+    --password=root `
+    --host=localhost `
+    --port=5432 `
+    --db=ny_taxi `
+    --table_name=yellow_tripdata_2021 `
+    --url="https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2021-01.parquet"
+
+
+# Dockerised ingest_file script
+docker build -t taxi_ingest:v001 .
+
+# We need to connect this to the existing network with postgres running
+# If we don't then script will fail when trying to connect to pg
+docker run -it `
+    --network=pg-network `
+    taxi_ingest:v001 `
+    --user=root `
+    --password=root `
+    --host=pg-database `
+    --port=5432 `
+    --db=ny_taxi `
+    --table_name=yellow_tripdata_2021 `
+    --url="https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2021-01.parquet"
+
