@@ -3,6 +3,8 @@ week_1_basics_and_setup/2_docker_sql/ny_taxi_postgres_data/
 week_1_basics_and_setup/2_docker_sql/yellow_tripdata_2021-01.csv
 week_1_basics_and_setup/2_docker_sql/yellow_tripdata_2021-01.parquet
 
+# All test files
+**/[Tt]est*
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
