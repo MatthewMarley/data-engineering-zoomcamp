@@ -1,0 +1,53 @@
+[33mcommit b219c5c09549a979b6780b15d7ef08e5f8a49de4[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Matt Cottrell <mattcottrell93@hotmail.co.uk>
+Date:   Sat Nov 5 10:31:50 2022 +0000
+
+    Created a docker-compose for our previous network of postgres containers
+
+[33mcommit 700c35132abcf20af3b0b14c52146428be9c0c90[m
+Author: Matt Cottrell <mattcottrell93@hotmail.co.uk>
+Date:   Sat Nov 5 10:07:57 2022 +0000
+
+    Updated gitignore to include all files named test
+
+[33mcommit a2c92f4cf772e0e504e7b30635328846169ce7e7[m
+Author: Matt Cottrell <mattcottrell93@hotmail.co.uk>
+Date:   Sat Nov 5 10:07:25 2022 +0000
+
+    Dockerised our taxi_data ingest .py script to run on the existing postgres network
+
+[33mcommit 2d73ea6e0d6d02cca81d98d6ce730ada2d8affa0[m
+Author: Matt Cottrell <mattcottrell93@hotmail.co.uk>
+Date:   Fri Nov 4 18:56:24 2022 +0000
+
+    Created a docker network between postgres db with ny_taxi data and pgadmin
+
+[33mcommit 2c288d3653e92ec5663390f9e30bc99cf53ae096[m
+Author: Matt Cottrell <mattcottrell93@hotmail.co.uk>
+Date:   Fri Nov 4 16:34:32 2022 +0000
+
+    Added data folders & files into gitignore
+
+[33mcommit 82ff6e29ac573475785543637de23d31ce9193ee[m
+Author: Matt Cottrell <mattcottrell93@hotmail.co.uk>
+Date:   Fri Nov 4 16:33:18 2022 +0000
+
+    Downloaded ny taxi data and imported into Postgres
+
+[33mcommit ae5f4a6f6a0a46c3a7d037ca4407db06e8efdba2[m
+Author: Matthew Cottrell <mattcottrell93@hotmail.co.uk>
+Date:   Sat Oct 29 13:18:18 2022 +0100
+
+    Intro to docker. Created Dockerfile & simple python script
+
+[33mcommit 13103eafdecf9546c87c564b38564abb9643eda7[m
+Author: Matthew Cottrell <mattcottrell93@hotmail.co.uk>
+Date:   Sat Oct 29 09:22:50 2022 +0100
+
+    Test
+
+[33mcommit ff3dcbb2583739b7c8c241e3b05b82aaaa2e33ce[m
+Author: MatthewMarley <88586268+MatthewMarley@users.noreply.github.com>
+Date:   Sat Oct 29 09:17:56 2022 +0100
+
+    Initial commit
